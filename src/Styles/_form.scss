@@ -98,7 +98,7 @@
 &_table_paragraph{
   margin-left: 0px;
   @include bdesktop(997px){
-    margin: 35px;
+    margin-left: 25px;
   }
 }
 }
@@ -107,7 +107,7 @@
   height: 478px;
   overflow: scroll;
   @include bdesktop(997px){
-    height: 333px;
+    height: 490px;
   }
 }
 
