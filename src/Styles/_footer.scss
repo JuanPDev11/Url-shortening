@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  background: hsl(260, 8%, 14%);
+  padding-top: 50px;
+  @include bdesktop(997px){
+    flex-direction: row;
+    align-items: initial;
+    text-align: left;
+    height: 250px;
+    justify-content: space-around;
+  }
+}
+
+.footer_item_title {
+  font-weight: bold;
+  margin: 27px 0px;
+  color: #fff;
+}
+
+.footer_item {
+  color: hsl(257deg, 7%, 63%);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer_column_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 17px 0px;
+}
+
+.footer_logo {
+  color: #fff;
+}
+
+@include bdesktop(997px){
+  .footer_icon{
+    width: 30px;
+    height: 30px;
+  }
+}

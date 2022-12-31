@@ -1,0 +1,114 @@
+.form {
+  margin: 0px auto;
+  background: hsl(257deg, 27%, 26%);
+  height: 150px;
+  border-radius: 10px;
+  width: 313px;
+  @include bdesktop(997px){
+  width: 740px;
+  margin: 0px 150px;
+  }
+  @include bdesktop(1200px){
+  width: 1056px;
+  }
+
+
+&_container {
+  background-image: url('../images/bg-shorten-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 313px;
+  margin: 90px 0px 60px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+  flex-direction: column;
+  @include bdesktop(997px){
+  background-image: url(http://localhost:3000/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg);
+  width: 740px;
+  gap: 22px;
+  flex-direction: row;
+  }
+  @include bdesktop(1200px){
+    width: 1056px;
+  }
+}
+
+&_imput_text{
+  width: 260px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  @include bdesktop(997px){
+    width: 395px;
+    height: 56px;
+  }
+  @include bdesktop(1200px){
+    width: 728px;
+  }
+}
+
+&_imput_submit{
+  padding: 8px 38px;
+  border: none;
+  border-radius: 10px;
+  background: hsl(180deg, 66%, 49%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 265px;
+  @include bdesktop(997px){
+    padding: 19px 38px;
+    width: 170px;
+  }
+}
+
+&_table {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-direction: column;
+  @include bdesktop(997px){
+    width: 1056px;
+    flex-direction: row;
+  }
+}
+
+&_table_button {
+  width: 115px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: hsl(180deg, 66%, 49%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+&_table_paragraph{
+  margin-left: 0px;
+  @include bdesktop(997px){
+    margin: 35px;
+  }
+}
+}
+
+.links_container {
+  height: 478px;
+  overflow: scroll;
+  @include bdesktop(997px){
+    height: 333px;
+  }
+}
+
+

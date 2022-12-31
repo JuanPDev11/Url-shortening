@@ -1,0 +1,97 @@
+.statistics {
+  margin: 0px 8px;
+}
+.statistics_texts {
+  text-align: center;
+  margin: 0px 15px 60px 15px;
+}
+
+.statistics_title {
+  font-size: 26px;
+  @include bdesktop(997px){
+  font-size: 14px
+  }
+  @include bdesktop(997px){
+    font-size: 35px;
+  }
+}
+
+.statistics_paragraph {
+  margin: 27px 0px 85px 0px;
+  line-height: 24px;
+  color: hsl(257deg, 7%, 63%);
+
+}
+
+.statistics_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+  @include bdesktop(997px){
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px 150px;
+  }
+}
+
+.statistics_card {
+  background: #fff;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  max-width: 350px;
+  border-radius: 10px;
+  height: max-content;
+  @include bdesktop(997px){
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.statistics_icons {
+  background: hsl(257deg, 27%, 26%);
+  padding: 25px;
+  border-radius: 50px;
+  position: absolute;
+  top: -50px;
+  @include bdesktop(997px){
+    margin-left: 25px;
+  }
+}
+
+.statistics_card_title {
+  margin: 80px 20px 15px 20px;
+  font-size: 23px;
+}
+
+.statistics_card_paragraph {
+  margin: 8px 20px 40px 20px;
+  padding: 0px 25px;
+  line-height: 24px;
+  color: hsl(257deg, 7%, 63%);
+  @include bdesktop(997px){
+    margin: 8px 0px 40px 0px;
+    line-height: 15px;
+  }
+   
+  @include bdesktop(1200px){
+    margin: 8px 0px 40px 0px;
+    //margin: 27px auto 85px auto;
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+@include bdesktop(997px){
+#card2 {
+  margin: 63px 10px 10px 10px;
+}
+}
+@include bdesktop(997px){
+#card3 {
+  margin: 126px 10px 10px 10px;
+}
+}

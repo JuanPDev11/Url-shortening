@@ -1,0 +1,116 @@
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 240px 260px;
+  margin: 0px 8px;
+  justify-items: center;
+
+  @include bdesktop (997px){
+      grid-template-columns: 1fr 313px;
+      grid-template-rows: 1fr;
+      height: 70vh;
+      margin-top: 26px;
+    }
+
+  @include bdesktop(1200px){
+      grid-template-columns: 1fr 542px;
+      grid-template-rows: 1fr;
+      height: 65vh;
+      margin-top: 26px;
+  }
+
+
+&_texts {
+  grid-row: 2/3;
+  @include bdesktop(997px){
+      grid-column: 1/2;
+      grid-row: 1/2;
+  }
+}
+
+&_title {
+  font-size: 36px;
+  max-width: 350px;
+  text-align: center;
+  @include bdesktop(997px){
+      font-size: 61px;
+      max-width: 570px;
+      text-align: left;
+      margin: 65px 0px 0px 150px; 
+  }
+  @include bdesktop(1200px){
+      font-size: 61px;
+      max-width: 570px;
+      text-align: left;
+      margin: 65px 0px 0px 150px; 
+  }
+}
+
+&_paragraph {
+  font-size: 15px;
+  max-width: 290px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px auto;
+  color: hsl(257deg, 7%, 63%);
+  @include bdesktop(997px){
+      grid-template-columns: 1fr 313px;
+      grid-template-rows: 1fr;
+      
+      margin-top: 26px;
+      font-size: 21px;
+      max-width: 700px;
+      line-height: 37px;
+      text-align: left;
+}
+  
+
+  @include bdesktop(997px){
+      font-size: 21px;
+      max-width: 700px;
+      line-height: 37px;
+      text-align: left;
+      margin: 6px 150px;
+      color: hsl(257deg, 7%, 63%);
+      font-weight: 500;
+  }
+}
+
+&_buttom {
+  background: hsl(180deg, 66%, 49%);
+  width: 121px;
+  margin: 14px auto;
+  padding: 12px 19px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  @include bdesktop(997px){
+      margin: 34px 0px 0px 150px;
+      padding: 15px 33px;
+      border: none;
+      border-radius: 25px;
+      color: #fff;   
+  }
+}
+
+&_img_container {
+  grid-row: 1/2;
+  overflow: hidden;
+  width:390px;
+  @include bdesktop(997px){
+      grid-column: 2/3;
+      overflow: hidden;
+      width: auto;
+  }
+}
+
+&_img {
+  width: 535px;
+  height: 240px;
+  @include bdesktop(997px){
+      width: 590px;
+      height: 385px;
+  }
+}
+}
