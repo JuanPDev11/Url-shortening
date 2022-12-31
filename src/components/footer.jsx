@@ -39,6 +39,7 @@ export default function Footer () {
           <img className="footer_icon" src={icon5}/>
         </div>
       </div>
+      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Juan Lucumi Medina</a>.</div>
     </>
       
   )
