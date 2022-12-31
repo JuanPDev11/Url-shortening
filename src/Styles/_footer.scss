@@ -4,7 +4,7 @@
   align-items: center;
   text-align: center;
   font-size: 10px;
-  background: hsl(260, 8%, 14%);
+  background: $Very-Dark-Violet;
   padding-top: 50px;
   @include bdesktop(997px){
     flex-direction: row;
@@ -22,7 +22,7 @@
 }
 
 .footer_item {
-  color: hsl(257deg, 7%, 63%);
+  color: $Grayish-Violet;
   font-size: 12px;
   font-weight: 500;
 }
